@@ -1,0 +1,31 @@
+Timing Information:
+-------------------
+How does each function “scale”? Which of the two functions scales better? How can you tell?
+Both functions have O(n) time complexity, but unshift operation requires shifting all existing elements 
+to insert a new element at the beginning, which is costly for large arrays in terms of space complexity. 
+The push adds a new element at the end of an array, which is generally more efficient as I can see from timing results. 
+
+Extra Large Array
+-----------------
+Time to run code with push(): 2.4917 ms
+Time to run code with unshift(): 619.227 ms
+
+Large Array
+-----------
+Time to run code with push(): 496.7 μs
+Time to run code with unshift(): 5.9456 ms
+
+Medium Array
+------------
+Time to run code with push(): 88.2 μs
+Time to run code with unshift(): 144.2 μs
+
+Small Array
+-----------
+Time to run code with push(): 87.3 μs
+Time to run code with unshift(): 32.5 μs
+
+Tiny Array
+----------
+Time to run code with push(): 87.8 μs
+Time to run code with unshift(): 26.5 μs
